@@ -19,5 +19,6 @@ cin>>arr[i];
 for(int j=0;j<no;j++){
     cout<<temp(arr[j])<<endl;
 }
+
     return 0;
 }

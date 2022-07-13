@@ -46,7 +46,7 @@ while(j<n2){
 }
 
 int main(){
-int arr1[] = {0,2,3,3,5}; 
+int arr1[] = {0,2,3,3,9}; 
 int arr2[] = {4,4,6,8,8};
 union_(arr1,arr2,5,5);
     return 0;

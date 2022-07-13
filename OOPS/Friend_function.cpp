@@ -9,6 +9,9 @@ public:
 };
 void test();
 
+
+
+
 class Truck
 {
 private:

@@ -47,6 +47,8 @@ void optimized_detect_loop(Node *head){
     }
     if(slow != fast){
         return;
+    }else{
+        slow = head;
     }
     while(slow ->next != fast->next){
         slow = slow->next;

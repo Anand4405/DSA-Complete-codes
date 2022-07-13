@@ -30,14 +30,20 @@ int diameter_binary_tree(Node *root){
     return max(d1,max(d2,d3));
 }
 
-int diameter_bi_tree(Node *root){  // optimized solution O(n)
+int height2(Node *root,int &ans)
+{
     if(root==NULL) return 0;
-    int res=0;
-    int lh = height(root->left);
-    int rh = height(root->right);
-                                            // wrong this
-    res = max(res,lh+rh+1);
-    return res;
+    int lh = height2(root->left,ans);
+    int rh = height2(root->right,ans);
+    ans = max(ans,lh+rh+1);
+    return max(lh,rh)+1;
+}
+
+int diameter_bi_tree(Node *root){  // optimized solution O(n)
+    if(root==NULL) return 0;         // this is wrong
+    int ans = INT_MIN;
+    height2(root,ans);
+    return ans;
 
 }
 
@@ -48,7 +54,7 @@ root->right = new Node(40);
 root->right->right = new Node(54);
 root->right->right->right = new Node(59);
 root->right->left = new Node(7);
-root->right->left->left = new Node(8);
+// root->right->left->left = new Node(8);
 cout<<diameter_binary_tree(root)<<endl;
 cout<<diameter_bi_tree(root);
     return 0;

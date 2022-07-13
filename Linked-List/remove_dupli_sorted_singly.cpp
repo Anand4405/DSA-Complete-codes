@@ -13,7 +13,7 @@ struct Node{
 void remove_duplica_sorted_singly(Node *head){
     Node *curr = head;
     while(curr != NULL && curr->next != NULL){
-        if(curr->data = curr->next->data){
+        if(curr->data == curr->next->data){
             Node *temp = curr->next;
             curr->next = curr->next->next;
             delete(temp);

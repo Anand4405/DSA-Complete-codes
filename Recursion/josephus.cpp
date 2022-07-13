@@ -1,15 +1,24 @@
 #include<iostream>
 using namespace std;
 
-int jos(int n, int k){
-    if(n==1){
-        return 0;
-    }  // if indexes begin from 1  then add 1 to final result
-
-    return (jos(n-1,k)+k)%n;
+int josephus(int n, int k)
+{
+  if (n == 1)
+    return 1;
+  else
+    /* The position returned by josephus(n - 1, k) 
+       is adjusted because the recursive call 
+       josephus(n - 1, k) considers the original 
+       position k%n + 1 as position 1 */
+    return 1+(josephus(n - 1, k) + k-1) % n ;
 }
 
-int main(){
-cout<<jos(10,4);
-    return 0;
+// Driver Program to test above function
+int main()
+{
+  int n = 14;
+  int k = 2;
+  printf("The chosen place is %d", 
+                 josephus(n, k));
+  return 0;
 }

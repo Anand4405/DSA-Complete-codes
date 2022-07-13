@@ -11,7 +11,7 @@ int subset_sum(int arr[] , int n,int sum){
 int main(){
 
 int arr[5] = {1,2,3,4,5};
-int sum=7;
+int sum=15;
 cout<<subset_sum(arr,5,sum);
 
 return 0;

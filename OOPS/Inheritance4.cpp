@@ -21,6 +21,7 @@ public:
 class BabyDog : public Dog
 {
 public:
+
     void weep()
     {
         cout << "Weeping...";

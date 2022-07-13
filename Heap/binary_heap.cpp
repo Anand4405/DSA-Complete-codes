@@ -48,7 +48,9 @@ int parent(int i) {return (i-1)/2;}
 
 void insert(int n){
     if(size==capacity) return;
+    size++;
     arr[size-1] = n;
+
     for(int i= size-1;i>0 && (arr[parent(i)]>arr[i]);){
 swap(arr[i], arr[parent(i)]); 
        i = parent(i); 

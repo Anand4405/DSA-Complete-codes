@@ -15,7 +15,7 @@ class Car: public Vehicle{
 public:
 int numGears;
 
-virtual void print(){
+void print(){
 
     cout<<"Car \n";  // this is function overriding 
 }

@@ -31,8 +31,9 @@ for(int i=n-2;i>=0;i--){
     rmax[i] = max(arr[i],rmax[i+1]);
 }
 
-for(int i=0;i<n;i++){
-res += min(lmax[i],rmax[i])- arr[i];
+for(int i=0;i<n;i++)
+{
+        res += min(lmax[i],rmax[i])- arr[i];
 }
 }
 int main(){

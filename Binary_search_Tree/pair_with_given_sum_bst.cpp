@@ -51,7 +51,7 @@ void check_pair_hashing(Node *root,int n){
     if(root==NULL) return;
     check_pair_hashing(root->left,n);
     if(s.find(abs(n-(root->key))) != s.end()){
-        cout<<n-root->key<<" "<<root->key<<endl;
+        cout<<n-(root->key)<<" "<<root->key<<endl;
         return;
     }else{
         s.insert(root->key);

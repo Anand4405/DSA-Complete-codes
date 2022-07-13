@@ -9,7 +9,10 @@ int sumfdigits(int n){
     }
     return 1+sumfdigits(n/10);
 }
-
+int &fun(){
+    static int i=5;
+    return i;
+}
 int digsum(int n){
     if(n==0){
         return 0;
@@ -34,5 +37,14 @@ cout<<sumfdigits(56489)<<endl;
     string s = to_string(c);
     cout<<s<<endl;
     cout<<digsum(163);
+cout<<endl;
+    fun() = 30;
+    cout<<fun()<<endl;
+int ii = 0.4;
+static float jj =0.4;
+if(ii==jj){
+    cout<<"match"<<endl;
+}else if(jj>ii) cout<<"Not matching";
+
     return 0;
 }

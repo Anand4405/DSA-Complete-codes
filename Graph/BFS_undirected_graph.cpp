@@ -16,7 +16,7 @@ void printGraph(vector<int>adj[],int n){
 }
 
 void BFS_undirected_graph(vector<int>adj[],int v,int s){ // this when source is given and all nodes are connected .
-    bool visited[v+1];
+    bool visited[v];
     for(int i=0;i<v;i++){
         visited[i] = false;
     }

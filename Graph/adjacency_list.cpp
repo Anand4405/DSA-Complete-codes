@@ -6,9 +6,12 @@ adj[u].push_back(v);
 adj[v].push_back(u);
 }
 
-void printGraph(vector<int>adj[],int n){
-    for(int i=0;i<n;i++){
-        for(auto j:adj[i]){
+void printGraph(vector<int>adj[],int n)
+{
+    for(int i=0;i<n;i++)
+    {
+        for(auto j:adj[i])
+        {
             cout<<j<<" ";
         }
         cout<<endl;

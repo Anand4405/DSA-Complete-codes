@@ -17,7 +17,7 @@ mp.at(10) = 87; // at works similar to square bracket only when key is present
 cout<<endl;
 cout<<mp.size()<<endl;
 cout<<mp[3]<<endl;
-for(auto &it:mp){
+for(auto &it:mp){ // if we remove & reference operator still works
     cout<<it.first<<" "<<it.second<<" ";
 }
 cout<<endl;
