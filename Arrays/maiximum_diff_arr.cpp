@@ -7,7 +7,7 @@ int maxdiff(int arr[],int n){
         res = max(res,arr[j]-minvalue);
         minvalue = min(minvalue,arr[j]);
     }
-    return res;
+    return res;  
 }
 int main(){
 int arr[5] = {1,2,3,4,5};

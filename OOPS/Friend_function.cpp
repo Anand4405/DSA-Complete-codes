@@ -33,7 +33,7 @@ void Bus::print(){ // we cant make initialize  function inside the
     t.x = 5;
     t.y = 20;
     t.z = 10;
-cout<<t.x<<" "<<t.y<<" "<<t.z<<endl;
+    cout<<t.x<<" "<<t.y<<" "<<t.z<<endl;
 }
 
 void test(){

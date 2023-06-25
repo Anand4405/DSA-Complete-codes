@@ -11,7 +11,6 @@ int left_repeatingchar(string str){  // naive solution
             return i;
         }
     }
-
     return -1;
 }
 

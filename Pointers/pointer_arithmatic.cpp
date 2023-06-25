@@ -8,7 +8,8 @@ int *p = &i;
 cout<<&i<<endl;
 cout<<p<<endl;
  p +=1; // it increases the by 4
- cout<<&p<<endl;
+ cout<<&p<<" "<<p<<endl;
+ 
 cout<<sizeof(p)<<endl;
 char c = 'a';
 char *cc = &c;

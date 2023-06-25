@@ -16,7 +16,7 @@ void detelet_node_pointer(Node *ptr)
 {
     Node *temp = ptr->next;
     ptr->data = temp->data;
-    ptr->next = temp->next;
+    ptr->next = ptr->next->next;
     delete (temp);
 }
 
@@ -37,5 +37,7 @@ int main()
 
     head->next = new Node(20);
     head->next->next = new Node(30); // short and cleaner implementation
+    detelet_node_pointer(head->next);
+    printList(head);
     return 0;
 }

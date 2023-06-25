@@ -40,7 +40,6 @@ while(i<N){
             j = lps[j-1];
         }
     }
-
 }
 }
 int main(){

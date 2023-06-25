@@ -24,7 +24,6 @@ void optimized_k_closest(int arr[],int n,int k,int x){
     priority_queue<pair<int,int>> pq;
     for(int i=0;i<k;i++){          // O(nlog(k)) overall time complexicity
         pq.push({abs(arr[i]-x),i});
-
     }
     for(int i=k;i<n;i++){
         if(abs(arr[i]-x)<pq.top().first){

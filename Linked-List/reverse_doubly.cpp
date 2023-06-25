@@ -18,17 +18,20 @@ Node *reverse_doubly(Node*head){
     }
     Node *pre = NULL;
     Node *curr = head;
-    while(curr->next !=NULL){
+    Node *temp;
+    while(curr !=NULL){
+        temp = curr;
         pre = curr->prev;
         curr->prev = curr->next;
         curr->next = pre;
-        curr = curr->next;
+        curr = curr->prev;
     }  
-    return pre->prev;
+    // return pre->prev; // this also works as pre will represent second last element then we need last element
+    return temp;
 }
 
 void print(Node *head){
-    while(head->next !=NULL){
+    while(head !=NULL){
         cout<<head->data<<" ";
         head = head->next;
     }

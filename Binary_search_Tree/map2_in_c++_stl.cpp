@@ -48,7 +48,8 @@ auto it4 = mp2.upper_bound(4);
 auto it5 = mp2.lower_bound(4);
 if(it4 != mp2.end()){
     cout<<(*it4).first<<" "<<(*it4).second<<endl;
-}else{
+}
+else{
     cout<<"smaller then smallest\n";
 }
 if(it5 != mp2.end()){

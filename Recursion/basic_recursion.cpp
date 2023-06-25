@@ -23,7 +23,7 @@ void Nprint(int n){
     cout<<n<<endl;
 }
 int main(){
-// deci_to_binary(8);
+deci_to_binary(8);
 printN(8);
 Nprint(5);
     return 0;

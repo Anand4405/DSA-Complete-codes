@@ -13,5 +13,10 @@ int *p = &i;
 cout<<*p<<endl;
 increamen(p);
 cout<<*p<<endl; // value of p changes.
+
+// int *ptr = 0;
+// int aa = 10;
+// *ptr = aa; // this method is wrong
+// cout<<*ptr<<endl;
     return 0;
 }

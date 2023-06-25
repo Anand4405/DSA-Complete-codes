@@ -39,7 +39,7 @@ Node *delete_node_bst(Node *root,int x){   //O(h) time and space complexicity sa
         else{
             Node *succ = getsuccesor(root);
             root->key = succ->key;
-            root->right = delete_node_bst(root->right,x);
+            root->right = delete_node_bst(root->right,succ->key);
         }
     }
     return root;

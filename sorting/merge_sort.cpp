@@ -1,6 +1,6 @@
 #include<iostream>
 #include<algorithm>
-
+// merging done in postorder traversal
 using namespace std;
 void merge(int arr[],int l,int m,int r){
     int n1 = m-l+1;

@@ -14,14 +14,20 @@ bool isBalanced(string str)
         {
             s.push(str[i]);
             i++;
-        }else{
-           if(s.empty()==true){
+        }
+        else
+        {
+           if(s.empty()==true)
+           {
                return false;
            }
-            if(matching(s.top(),str[i])){
+           if(matching(s.top(),str[i]))
+            {
                 s.pop();
                 i++;
-            }else{
+            }
+            else
+            {
                 return false;
             }
         }

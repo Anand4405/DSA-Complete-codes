@@ -2,7 +2,7 @@
 using namespace std;
 void printGroups(bool arr[],int n){
     for(int i=1;i<n;i++){
-        if(arr[i] !=arr[i-1]){
+        if(arr[i] != arr[i-1]){
             if(arr[i] != arr[0]){
                 cout<<"from "<<i << " to ";
             }

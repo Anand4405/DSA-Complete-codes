@@ -23,9 +23,7 @@ bool equilibrium_point(int arr[],int n){
         }
         if(l_sum == r_sum){
             return true;
-        }
-
-        
+        }       
     }
     return false;
 }

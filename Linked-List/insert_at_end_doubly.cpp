@@ -22,7 +22,7 @@ Node *insert_atend(Node *head,int x){
        temp =  temp->next;
     }
     temp->next = curr;
-    curr->prev = head;
+    curr->prev = temp;
     
     return head;
 }

@@ -14,9 +14,9 @@ void getmedian(int arr[], int n)
         {
             if (s.top() > x)
             {
+                s.push(x);
                 g.push(s.top());
                 s.pop();
-                s.push(x);
             }
             else
             {

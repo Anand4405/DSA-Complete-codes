@@ -41,7 +41,7 @@ void bottomView(Node *root){ // this is space optimized
         Node *curr=p.first;
         int hd=p.second;
         
-            mp[hd]=(curr->key);
+        mp[hd]=(curr->key);
         q.pop();
         if(curr->left!=NULL)
             q.push({curr->left,hd-1});

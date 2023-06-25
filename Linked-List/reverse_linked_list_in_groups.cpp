@@ -22,8 +22,8 @@ Node *reversek(Node *head,int k){
         curr = next;
         count++;
     }
-    if(next != NULL){
-        Node *rest_head = reversek(next,k);
+    if(curr != NULL){
+        Node *rest_head = reversek(curr,k);
         head->next = rest_head;
     }
     return prev;
@@ -44,5 +44,7 @@ Node *head = new Node(10);
 head ->next = new Node(20);
 head ->next ->next = new Node(30); // short and cleaner implementation
 head->next->next->next = new Node(37);
+head = reversek(head,2);
+printList(head);
     return 0;
 }

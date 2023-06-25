@@ -17,7 +17,7 @@ Node *sorted_insert(Node *head,int x){
     }
     if(head->data >temp->data){
         temp->next = head;
-        temp;
+       return temp;
     }
     Node *curr = head;
     while(curr->next->data<= temp->data && curr->next !=NULL){

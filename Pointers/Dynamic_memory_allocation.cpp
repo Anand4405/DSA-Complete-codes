@@ -11,7 +11,7 @@ cout<<*p<<endl;
 int *arr = new int[50];  // dynamic allocation of array
      int n;
      cin>>n;
-     int *arr2 = new int[n]; // we can allocate memory on runtime adn we can decide size of array on 
+     int *arr2 = new int[n]; // we can allocate memory on runtime and we can decide size of array on 
                             //runtime this uses heap and static allocation uses stack                           
                             // we need to free dynamic memory allocation memory. It automatically wasnt deleted with scope
                             // delete keyword we need to use for making space free
@@ -19,6 +19,6 @@ int *arr = new int[50];  // dynamic allocation of array
   arr = new int(10); 
   cout<<*arr<<endl;
 
-  delete [] arr2; // this is for deleting dynamic array
+  delete [] arr2; // this is for deleting dynamic array 
     return 0;
 }

@@ -19,7 +19,8 @@ int dp_subset_sum(int arr[],int n,int sum){
         
      for(int i=1;i<=n;i++){
          for(int j=0;j<=sum;j++){
-             if(j<arr[i-1]){
+             if(j<arr[i-1])
+             {
                  dp[i][j] = dp[i-1][j];
 
              }else{

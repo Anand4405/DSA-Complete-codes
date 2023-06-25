@@ -18,18 +18,18 @@ int max_cuts_dp(int n,int a,int b,int c){
     dp[0] = 0;
     for(int i=1;i<=n;i++){
         dp[i] = -1;
-        if(i-a >= 0) dp[i] = max(dp[i],dp[i-a]);
-        if(i-b >= 0) dp[i] = max(dp[i],dp[i-b]);
-        if(i-c >= 0) dp[i] = max(dp[i],dp[i-c]);
-        if(dp[i] != -1){
-            dp[i]++;
-        }
+        if(i-a >= 0) dp[i] = max(dp[i],dp[i-a]+1);
+        if(i-b >= 0) dp[i] = max(dp[i],dp[i-b]+1);
+        if(i-c >= 0) dp[i] = max(dp[i],dp[i-c]+1);
+        // if(dp[i] != -1){
+        //     dp[i]++;
+        // }
     }
     return dp[n];
 }
 
 int main(){
 
-cout<<max_cuts_dp(5,4,2,3)<<endl;
+cout<<max_cuts_dp(7,4,2,3)<<endl;
     return 0;
 }
