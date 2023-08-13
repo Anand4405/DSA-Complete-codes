@@ -29,7 +29,7 @@ int edit_distance_DP(string s1,string s2,int m,int n){
 
     for(int i=1;i<=m;i++){
         for(int j=1;j<=n;j++){
-            if(s1[i-1]==s2[i-1]){
+            if(s1[i-1]==s2[j-1]){
                 dp[i][j] = dp[i-1][j-1];
             }else{
                 dp[i][j] = 1+min(dp[i][j-1],min(dp[i-1][j-1],dp[i-1][j]));
@@ -41,7 +41,7 @@ return dp[m][n];
 
 int main(){
 
-string s1 = "geok";
+string s1 = "gjok";
 string s2 = "geeks";
 cout<<edit_distance(s1,s2,4,5)<<endl;
 cout<<edit_distance_DP(s1,s2,4,5);

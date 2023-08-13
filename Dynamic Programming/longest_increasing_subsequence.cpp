@@ -42,7 +42,7 @@ int ceil_index(int tail[], int l, int r, int x)
 int optimized_longest_incresing_subsequence(int arr[], int n)
 {
     int tail[n], len = 1; // this takes nlog(n) time
-    tail[0] = 1;
+    tail[0] = arr[0];
     for (int i = 1; i < n; i++)
     {
         if (tail[len - 1] < arr[i])

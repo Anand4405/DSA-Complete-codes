@@ -9,7 +9,7 @@ int square_root(int n){
         if(msq==n){
             return mid;
         }
-        else if(n <= msq){
+        else if(n < msq){
             high = mid-1;
         }
         else{

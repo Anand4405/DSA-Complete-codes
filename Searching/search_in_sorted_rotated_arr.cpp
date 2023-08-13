@@ -8,7 +8,7 @@ int rota_sort_search(int arr[],int n,int key){
         if(arr[mid]==key){
             return mid; 
         }
-        if(arr[low]< arr[mid]){
+        if(arr[low]<= arr[mid]){
             if((key >= arr[low]) && (key < arr[mid])){
                 high = mid-1;
             }

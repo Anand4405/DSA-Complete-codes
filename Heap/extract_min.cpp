@@ -81,7 +81,7 @@ public:
     void decrease_key2(int index, int value)
     {
         arr[index] = value;
-        while (index != 0 && arr[parent(index)] < arr[index])
+        while (index != 0 && arr[parent(index)] > arr[index])
         {
             swap(arr[parent(index)], arr[index]);
             index = parent(index);

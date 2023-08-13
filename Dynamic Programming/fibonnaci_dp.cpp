@@ -33,6 +33,18 @@ int fib_tabu(int n){
     return f[n];
 }
 
+int fib2(int n)
+{
+    if(n<=1)
+    {
+        cout<<n<<endl;
+        return n;
+    }
+    int res = fib(n-1)+fib(n-2);
+    cout<<res<<endl;
+    return res;
+}
+
 
 int main()
 {
@@ -43,5 +55,6 @@ int main()
 
     cout << fib(n)<<endl;
     cout<<fib_tabu(n);
+    fib2(5);
     return 0;
 }
